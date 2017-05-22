@@ -1,0 +1,35 @@
+* {
+	color: #fff;
+	font-family: 'Open sans', sans-serif;
+}
+
+body {
+	background-color: #55ACEE;
+}
+
+main {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tweet {
+	text-decoration: none;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0);
+	margin: 30px;
+}
+
+.tweet, 
+.trigger {
+	display: inline-block;
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	border:	1px #fff solid;
+	cursor: pointer;
+}
