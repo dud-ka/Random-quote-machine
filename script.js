@@ -11,18 +11,20 @@ function getQuote() {
 }
 
 function createTweet(input) {
- var data = input[0];
+	var data = input[0];
 
- var quoteText = $(data.content).text().trim();
- var quoteAuthor = data.title;
- var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
+	var quoteText = $(data.content).text().trim();
+	var quoteAuthor = data.title;
+	
 
- if (!quoteAuthor.length) {
-  quoteAuthor = "Unknown author";
-  }
+	if (!quoteAuthor.length) {
+		quoteAuthor = "Unknown author";
+	}
+	
+	var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 
 if (tweetText.length > 140) { //jesli długość tweeta jest większa niż 140 znaków, wygeneruj tweet jeszcze raz
-  getQuote();
+	getQuote();
 } else {  // jeśli nie jest, do zmiennej tweet przypisz zmienną tweet link (która służy do wysyłania tweetów) oraz nasz cały cytat
 	var tweet = tweetLink + encodeURIComponent(tweetText);
 	$('.quote').text(quoteText);
