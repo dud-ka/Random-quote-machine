@@ -1,2 +1,2 @@
 # Random quote machine
-https://dud-ka.github.io/Random-quote-machine/
+https://kjanota.github.io/Random-quote-machine/
